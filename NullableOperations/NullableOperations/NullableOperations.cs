@@ -17,5 +17,17 @@ namespace NullableOperations
             Assert.AreEqual(30, money1 * money2);
             Assert.IsTrue(decimal.Equals(0.8333333333333333333333333333M, (money1 / money2).Value));
         }
+
+        [TestMethod]
+        public void FirstNullableWithoutValue()
+        {
+            decimal? money1 = null;
+            decimal? money2 = 6;
+
+            Assert.IsNull(money1 + money2);
+            Assert.IsNull(money1 - money2);
+            Assert.IsNull(money1 * money2);
+            Assert.IsNull(money1 / money2);
+        }
     }
 }
