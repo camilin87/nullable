@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace NullableOperations
 {
     [TestClass]
-    public class NullableOperations
+    public class NullableArithmeticOperations
     {
         [TestMethod]
         public void NullablesWithValues()
