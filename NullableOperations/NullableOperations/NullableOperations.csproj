@@ -51,7 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="NullableArithmeticOperations.cs" />
-    <Compile Include="NullableUnaryOperations.cs" />
+    <Compile Include="NullableUnaryArithmeticOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
