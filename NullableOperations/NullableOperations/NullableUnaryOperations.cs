@@ -15,5 +15,14 @@ namespace NullableOperations
             Assert.AreEqual(4, --money2);
         }
         
+        [TestMethod]
+        public void NullablesWithoutValues()
+        {
+            decimal? money1 = null;
+            decimal? money2 = null;
+
+            Assert.IsNull(money1);
+            Assert.IsNull(money2);
+        }
     }
 }
