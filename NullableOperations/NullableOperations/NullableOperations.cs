@@ -110,21 +110,16 @@ namespace NullableOperations
         }
 
         [TestMethod]
-        public void NullablesWithoutValues()
+        public void NullablesWithoutValuesDirectly()
         {
             decimal? money1 = null;
-            decimal? money2 = null;
 
             Assert.IsNull(++money1);
-            Assert.IsNull(--money2);
+            Assert.IsNull(--money1);
         }
-    }
-    
-    [TestClass]
-    public class NullableUnaryArithmeticOperationsWithNull
-    {
+
         [TestMethod]
-        public void NullablesWithoutValues()
+        public void NullablesWithoutValuesAfterAssignment()
         {
             decimal? money1 = null;
             decimal? money2 = ++money1;
