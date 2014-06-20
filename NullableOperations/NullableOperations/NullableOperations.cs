@@ -119,4 +119,19 @@ namespace NullableOperations
             Assert.IsNull(--money2);
         }
     }
+    
+    [TestClass]
+    public class NullableUnaryArithmeticOperationsWithNull
+    {
+        [TestMethod]
+        public void NullablesWithoutValues()
+        {
+            decimal? money1 = null;
+            decimal? money2 = ++money1;
+            decimal? money3 = --money1;
+
+            Assert.IsNull(money2);
+            Assert.IsNull(money3);
+        }
+    }
 }
