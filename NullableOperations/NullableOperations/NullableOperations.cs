@@ -29,5 +29,17 @@ namespace NullableOperations
             Assert.IsNull(money1 * money2);
             Assert.IsNull(money1 / money2);
         }
+        
+        [TestMethod]
+        public void SecondNullableWithoutValue()
+        {
+            decimal? money1 = 5;
+            decimal? money2 = null;
+
+            Assert.IsNull(money1 + money2);
+            Assert.IsNull(money1 - money2);
+            Assert.IsNull(money1 * money2);
+            Assert.IsNull(money1 / money2);
+        }
     }
 }
