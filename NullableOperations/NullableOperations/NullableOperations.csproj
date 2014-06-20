@@ -50,9 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="NullableArithmeticOperations.cs" />
-    <Compile Include="NullableArithmeticOperationsWithNull.cs" />
-    <Compile Include="NullableUnaryArithmeticOperations.cs" />
+    <Compile Include="NullableOperations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
