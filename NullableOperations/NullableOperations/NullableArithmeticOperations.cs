@@ -15,6 +15,7 @@ namespace NullableOperations
             Assert.AreEqual(-1, money1 - money2);
             Assert.AreEqual(30, money1 * money2);
             Assert.IsTrue(decimal.Equals(0.8333333333333333333333333333M, (money1 / money2).Value));
+            Assert.AreEqual(5, money1 % money2);
         }
 
         [TestMethod]
@@ -27,6 +28,7 @@ namespace NullableOperations
             Assert.IsNull(money1 - money2);
             Assert.IsNull(money1 * money2);
             Assert.IsNull(money1 / money2);
+            Assert.IsNull(money1 % money2);
         }
         
         [TestMethod]
@@ -39,6 +41,7 @@ namespace NullableOperations
             Assert.IsNull(money1 - money2);
             Assert.IsNull(money1 * money2);
             Assert.IsNull(money1 / money2);
+            Assert.IsNull(money1 % money2);
         }   
         
         [TestMethod]
@@ -51,6 +54,7 @@ namespace NullableOperations
             Assert.IsNull(money1 - money2);
             Assert.IsNull(money1 * money2);
             Assert.IsNull(money1 / money2);
+            Assert.IsNull(money1 % money2);
         }
     }
 }
