@@ -21,8 +21,8 @@ namespace NullableOperations
             decimal? money1 = null;
             decimal? money2 = null;
 
-            Assert.IsNull(money1);
-            Assert.IsNull(money2);
+            Assert.IsNull(++money1);
+            Assert.IsNull(--money2);
         }
     }
 }
